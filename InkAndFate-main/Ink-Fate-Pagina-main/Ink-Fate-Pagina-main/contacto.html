@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink & Fate - Novelas Visuales</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="brand-logo" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <div class="brand-name">
+                    <span>Ink & Fate</span>
+                </div>
+            </div>
+
+            <button class="mobile-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="nosotros.html" class="nav-link">Sobre Nosotros</a>
+                <a href="juegos.html" class="nav-link">Nuestras Novelas</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+  <section class="contact-section" id="contacto">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contacto</h2>
+                    <p>
+                        Estamos listos para colaborar en proyectos educativos y narrativos. Escríbenos para consultas sobre nuestros juegos o nuevas ideas.
+                    </p>
+                    <div class="contact-details">
+                        <a href="mailto:inkandfate@gmail.com" class="contact-email">inkandfate@gmail.com</a>
+                        <span class="contact-location">Mendoza, Argentina</span>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Tu nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" class="form-control" placeholder="tu@correo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <input type="text" id="asunto" class="form-control" placeholder="¿En qué podemos ayudarte?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" class="form-control" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="gameModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitle">Título del Juego</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modalDescription">Descripción detallada del juego...</p>
+                <div class="modal-actions">
+                    <button class="btn-outline" id="btnTrailer"><i class="fa-solid fa-play"></i> Ver Tráiler</button>
+                    <button class="btn-gold" id="btnDemo">Jugar Demo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="script.js"></script>
+
+   <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="brand-logo" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <div class="brand-name">
+                    <span>Ink & Fate</span>
+                </div>
+            </div>
+
+            <p class="footer-copy">© 2026 Ink & Fate. Todos los derechos reservados.</p>
+
+            <div class="social-links">
+                <a href="#" class="social-icon social-instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-icon social-youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="social-icon social-x" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="social-icon social-tiktok" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
