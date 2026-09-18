@@ -972,5 +972,76 @@
     text-align: center;
 }
 .hero-section {
-    background: url('fondo.jpg') no-repeat center center / cover !important;
+    background: url('isologotipo.jpg') no-repeat center center / cover !important;
+}
+.hero-subtitle {
+ max-width: 380px;
+  transform: translateX(-30px);
+}
+/* Contenedor principal para alinear el bloque superior y el inferior */
+.integrantes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px; /* Separación vertical entre Antonella y la fila de abajo */
+  padding: 20px;
+}
+
+/* Fila para los integrantes de abajo */
+.fila-abajo {
+  display: flex;
+  justify-content: center;
+  gap: 35px; /* Espacio horizontal para que no estén apretados */
+  flex-wrap: wrap;
+}
+
+/* Estilo para cada tarjeta/recuadro */
+.tarjeta {
+  background-color: #e5cfb3; /* Tono de fondo similar al de tu diseño */
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-align: center;
+  min-width: 170px;
+}
+.novelaplay {
+    padding: 5rem 0;
+    background-color: var(--bg-light, #f8f9fa);
+}
+
+.novelaplay-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.novelaplay-card {
+    background: var(--bg-light, #f8f9fa);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    border-top: 4px solid var(--brand-gold, #dcb242);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.novelaplay-card i {
+    font-size: 2.5rem;
+    color: var(--brand-blue, #0b3a75);
+    margin-bottom: 1rem;
+}
+
+.novelaplay-card h3 {
+    color: var(--brand-blue, #0b3a75);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.novelaplay-card p {
+    color: var(--brand-blue, #0b3a75);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.novelaplay-text {
+    text-align: center;
+    margin-bottom: 3rem;
 }
